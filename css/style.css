@@ -1,0 +1,183 @@
+@import url(./rest.css);
+@import 'navigation.css';
+@import 'catalog.css';
+@import 'order.css';
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+@import 'count.css';
+@import 'procuct.css';
+@import 'footer.css';
+@import 'modal.css';
+@import 'modalCounter.css';
+@import 'modalDelivery.css';
+html{
+    --container:300px;
+    --pading-container:10px;
+    /*position: relative;
+    overflow-x: hidden;*/
+}
+/* defoult */
+body{
+    font-family: 'Nunito', sans-serif;
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    color: black;
+    /*position: absolute;
+    overflow-x: hidden;*/
+}
+.container_header{
+    max-width: 320px;
+    padding: 0 var(--pading-container);
+    margin: 0 auto;
+}
+button{
+    padding: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.visuallu_hidden{
+    position: fixed;
+    transform: scale(0);
+}
+.currency{
+    font-weight: 400;
+}
+
+/* haeder */
+.header{
+    background-image: url("data:image/svg+xml,%3Csvg id='header' width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3E%3Ccircle cx='100' cy='100' r='100' fill='%23FFAB08'/%3E%3C/svg%3E");
+    background-position: bottom;
+    background-size: 611px;
+    background-repeat: no-repeat;
+    padding: 24px 0px 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.img_logo{
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+.header_title_container{
+    padding-bottom: 246px;
+    background: url(./../img/burger.svg) bottom/227px;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.header_text{
+   font-size: 12px;
+   font-weight: 600;
+   color: #FFFFFF;
+}
+.title_header{
+    margin-bottom: 16px;
+    font-size: 30px;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+.title_header_text{
+    display: block;
+}
+.title_header_text_red{
+    color: #FF5C00;
+}
+
+/* модальное окно */
+
+
+/* адаптив */
+@media (min-width:480px){
+    .header{
+        background-size: 1400px;
+        padding-bottom: 44px;
+    }
+    .container_header{
+        max-width: 480px;
+    }
+    .header_title_container{
+        padding-bottom: 0;
+        padding-left: 180px;
+        text-align: left;
+        background-position: left;
+        background-size: contain;
+        padding-top: 27px;
+        min-height: 190px;
+    }
+    html{
+        --container:640px;
+    }
+}
+@media(min-width:768px){
+    .header{
+        background-size: 2540px;
+    }
+    html{
+        --pading-container:64px;
+    }
+    .container_header{
+        max-width: calc(562px + var(--pading-container)*2);
+    }
+    .title_header{
+        font-size: 36px;
+        margin-bottom: 26px;
+    }
+    .header_title_container{
+        padding-left: 237px;
+        min-height: 229px;
+    }
+}
+@media(min-width:1024px){
+    html{
+        --container:764px;
+        --pading-container:32px;
+    }
+    .header{
+        background-size: 2880px;
+        padding-bottom: 63px;
+        margin-bottom: 40px;
+    }
+    .container_header{
+        max-width: calc(764px + var(--pading-container)*2);
+    }
+    .title_header{
+        font-size: 50px;
+        margin-bottom: 52px;
+    }
+    .header_title_container{
+        padding-left: 326px;
+        min-height: 326px;
+        padding-top: 46px;
+    }
+    .header_text{
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+@media(min-width:1360px){
+    html{
+        --container:1290px;
+    }
+    .container_header{
+        max-width: calc(784px + var(--pading-container)*2);
+    }
+}
+@media(min-width:1440px){
+    html{
+        --container:1290px;
+    }
+    .header_title_container{
+        padding-left: 347px;
+    }
+}

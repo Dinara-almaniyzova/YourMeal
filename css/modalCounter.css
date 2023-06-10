@@ -1,0 +1,30 @@
+.counter {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    padding: 9px 12px;
+    background-color: #F2F2F3;
+    border-radius: 12px;
+    width: 84px;
+}
+
+.counter__button {
+    width: 10px;
+    height: 22px;
+}
+
+.counter__input {
+    width: 10px;
+    margin-left: 15px;
+}
+
+.counter__burron_plus {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.disavled{
+    color: #FF7020;
+    cursor: default;
+}
